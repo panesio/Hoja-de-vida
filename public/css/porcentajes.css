@@ -1,0 +1,575 @@
+.circular-progress {
+    margin: auto;
+    position: relative;
+}
+
+.circular-progress,
+.circular-progress:before,
+.circular-progress:after {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
+.circular-progress:before,
+.circular-progress:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.circular-progress:before {
+    padding: .5em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 2rem;
+    line-height: 8rem;
+}
+
+.circular-progress:after {
+    line-height: 13rem;
+}
+
+.html {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, Orange), color-stop(50%, rgba(255, 165, 0, 0.2)));
+    background: linear-gradient(0deg, Orange 50%, rgba(255, 165, 0, 0.2) 50%);
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+}
+
+.html:before,
+.html:after {
+    color: Orange;
+}
+
+.html:before {
+    content: "HTML5";
+    background: #222222 content-box;
+    -webkit-transform: rotate(-144deg);
+    transform: rotate(-144deg);
+    text-transform: uppercase;
+}
+
+.html:after {
+    content: "80%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #222222));
+    background: linear-gradient(transparent 50%, #222222 50%);
+    -webkit-transform: scale(1.1) rotate(-144deg);
+    transform: scale(1.1) rotate(-144deg);
+}
+
+.css {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
+    background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+}
+
+.css:before,
+.css:after {
+    color: blue;
+}
+
+.css:before {
+    content: "CSS";
+    background: #222222 content-box;
+    -webkit-transform: rotate(-126deg);
+    transform: rotate(-126deg);
+    text-transform: uppercase;
+}
+
+.css:after {
+    content: "70%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #222222));
+    background: linear-gradient(transparent 50%, #222222 50%);
+    -webkit-transform: scale(1.1) rotate(-126deg);
+    transform: scale(1.1) rotate(-126deg);
+}
+
+.js {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, yellow), color-stop(50%, rgba(255, 255, 0, 0.2)));
+    background: linear-gradient(0deg, yellow 50%, rgba(255, 255, 0, 0.2) 50%);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.js:before,
+.js:after {
+    color: yellow;
+}
+
+.js:before {
+    content: "JavaScript";
+    background: #222222 content-box;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+}
+
+.js:after {
+    content: "50%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #222222));
+    background: linear-gradient(transparent 50%, #222222 50%);
+    -webkit-transform: scale(1.1) rotate(-90deg);
+    transform: scale(1.1) rotate(-90deg);
+}
+
+.sql {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #06bb70), color-stop(50%, rgba(6, 187, 112, 0.2)));
+    background: linear-gradient(0deg, #06bb70 50%, rgba(6, 187, 112, 0.2) 50%);
+    -webkit-transform: rotate(99deg);
+    transform: rotate(99deg);
+}
+
+.sql:before,
+.sql:after {
+    color: #06bb70;
+}
+
+.sql:before {
+    content: "MySql";
+    background: #282828 content-box;
+    -webkit-transform: rotate(-99deg);
+    transform: rotate(-99deg);
+    text-transform: uppercase;
+}
+
+.sql:after {
+    content: "55%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #282828));
+    background: linear-gradient(transparent 50%, #282828 50%);
+    -webkit-transform: scale(1.1) rotate(-99deg);
+    transform: scale(1.1) rotate(-99deg);
+}
+
+.php {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ff4040), color-stop(50%, rgba(255, 64, 64, 0.2)));
+    background: linear-gradient(0deg, #ff4040 50%, rgba(255, 64, 64, 0.2) 50%);
+    -webkit-transform: rotate(72deg);
+    transform: rotate(72deg);
+}
+
+.php:before,
+.php:after {
+    color: #ff4040;
+}
+
+.php:before {
+    content: "PHP";
+    background: #282828 content-box;
+    -webkit-transform: rotate(-72deg);
+    transform: rotate(-72deg);
+    text-transform: uppercase;
+}
+
+.php:after {
+    content: "40%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #282828));
+    background: linear-gradient(transparent 50%, #282828 50%);
+    -webkit-transform: scale(1.1) rotate(-72deg);
+    transform: scale(1.1) rotate(-72deg);
+}
+
+.mongo {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(0, 128, 0, 0.2)));
+    background: linear-gradient(0deg, green 50%, rgba(0, 128, 0, 0.2) 50%);
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+}
+
+.mongo:before,
+.mongo:after {
+    color: green;
+}
+
+.mongo:before {
+    content: "Mongo";
+    background: #282828 content-box;
+    -webkit-transform: rotate(-126deg);
+    transform: rotate(-126deg);
+    text-transform: uppercase;
+}
+
+.mongo:after {
+    content: "70%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #282828));
+    background: linear-gradient(transparent 50%, #282828 50%);
+    -webkit-transform: scale(1.1) rotate(-126deg);
+    transform: scale(1.1) rotate(-126deg);
+}
+
+.node {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ad0d98), color-stop(50%, rgba(173, 13, 152, 0.2)));
+    background: linear-gradient(0deg, #ad0d98 50%, rgba(173, 13, 152, 0.2) 50%);
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+}
+
+.node:before,
+.node:after {
+    color: #ad0d98;
+}
+
+.node:before {
+    content: "Node";
+    background: #282828 content-box;
+    -webkit-transform: rotate(-126deg);
+    transform: rotate(-126deg);
+    text-transform: uppercase;
+}
+
+.node:after {
+    content: "70%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #282828));
+    background: linear-gradient(transparent 50%, #282828 50%);
+    -webkit-transform: scale(1.1) rotate(-126deg);
+    transform: scale(1.1) rotate(-126deg);
+}
+
+.express {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #0768a0), color-stop(50%, rgba(7, 104, 160, 0.2)));
+    background: linear-gradient(0deg, #0768a0 50%, rgba(7, 104, 160, 0.2) 50%);
+    -webkit-transform: rotate(108deg);
+    transform: rotate(108deg);
+}
+
+.express:before,
+.express:after {
+    color: #0768a0;
+}
+
+.express:before {
+    content: "Express";
+    background: #282828 content-box;
+    -webkit-transform: rotate(-108deg);
+    transform: rotate(-108deg);
+    text-transform: uppercase;
+}
+
+.express:after {
+    content: "60%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #282828));
+    background: linear-gradient(transparent 50%, #282828 50%);
+    -webkit-transform: scale(1.1) rotate(-108deg);
+    transform: scale(1.1) rotate(-108deg);
+}
+
+.angular {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+    background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
+    -webkit-transform: rotate(108deg);
+    transform: rotate(108deg);
+}
+
+.angular:before,
+.angular:after {
+    color: red;
+}
+
+.angular:before {
+    content: "Angular";
+    background: #282828 content-box;
+    -webkit-transform: rotate(-108deg);
+    transform: rotate(-108deg);
+    text-transform: uppercase;
+}
+
+.angular:after {
+    content: "60%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #282828));
+    background: linear-gradient(transparent 50%, #282828 50%);
+    -webkit-transform: scale(1.1) rotate(-108deg);
+    transform: scale(1.1) rotate(-108deg);
+}
+
+
+/*# sourceMappingURL=estilos.css.map */
+
+.circular-progress {
+    margin: auto;
+    position: relative;
+}
+
+.circular-progress,
+.circular-progress:before,
+.circular-progress:after {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
+.circular-progress:before,
+.circular-progress:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.circular-progress:before {
+    padding: .5em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 2rem;
+    line-height: 8rem;
+}
+
+.circular-progress:after {
+    line-height: 13rem;
+}
+
+.html {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, Orange), color-stop(50%, rgba(255, 165, 0, 0.2)));
+    background: linear-gradient(0deg, Orange 50%, rgba(255, 165, 0, 0.2) 50%);
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+}
+
+.html:before,
+.html:after {
+    color: Orange;
+}
+
+.html:before {
+    content: "HTML5";
+    background: #222222 content-box;
+    -webkit-transform: rotate(-144deg);
+    transform: rotate(-144deg);
+    text-transform: uppercase;
+}
+
+.html:after {
+    content: "80%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #222222));
+    background: linear-gradient(transparent 50%, #222222 50%);
+    -webkit-transform: scale(1.1) rotate(-144deg);
+    transform: scale(1.1) rotate(-144deg);
+}
+
+.css {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
+    background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+}
+
+.css:before,
+.css:after {
+    color: blue;
+}
+
+.css:before {
+    content: "CSS";
+    background: #222222 content-box;
+    -webkit-transform: rotate(-126deg);
+    transform: rotate(-126deg);
+    text-transform: uppercase;
+}
+
+.css:after {
+    content: "70%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #222222));
+    background: linear-gradient(transparent 50%, #222222 50%);
+    -webkit-transform: scale(1.1) rotate(-126deg);
+    transform: scale(1.1) rotate(-126deg);
+}
+
+.js {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, yellow), color-stop(50%, rgba(255, 255, 0, 0.2)));
+    background: linear-gradient(0deg, yellow 50%, rgba(255, 255, 0, 0.2) 50%);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.js:before,
+.js:after {
+    color: yellow;
+}
+
+.js:before {
+    content: "JavaScript";
+    background: #222222 content-box;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+}
+
+.js:after {
+    content: "50%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #222222));
+    background: linear-gradient(transparent 50%, #222222 50%);
+    -webkit-transform: scale(1.1) rotate(-90deg);
+    transform: scale(1.1) rotate(-90deg);
+}
+
+.sql {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #06bb70), color-stop(50%, rgba(6, 187, 112, 0.2)));
+    background: linear-gradient(0deg, #06bb70 50%, rgba(6, 187, 112, 0.2) 50%);
+    -webkit-transform: rotate(99deg);
+    transform: rotate(99deg);
+}
+
+.sql:before,
+.sql:after {
+    color: #06bb70;
+}
+
+.sql:before {
+    content: "MySql";
+    background: #282828 content-box;
+    -webkit-transform: rotate(-99deg);
+    transform: rotate(-99deg);
+    text-transform: uppercase;
+}
+
+.sql:after {
+    content: "55%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #282828));
+    background: linear-gradient(transparent 50%, #282828 50%);
+    -webkit-transform: scale(1.1) rotate(-99deg);
+    transform: scale(1.1) rotate(-99deg);
+}
+
+.php {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ff4040), color-stop(50%, rgba(255, 64, 64, 0.2)));
+    background: linear-gradient(0deg, #ff4040 50%, rgba(255, 64, 64, 0.2) 50%);
+    -webkit-transform: rotate(72deg);
+    transform: rotate(72deg);
+}
+
+.php:before,
+.php:after {
+    color: #ff4040;
+}
+
+.php:before {
+    content: "PHP";
+    background: #282828 content-box;
+    -webkit-transform: rotate(-72deg);
+    transform: rotate(-72deg);
+    text-transform: uppercase;
+}
+
+.php:after {
+    content: "40%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #282828));
+    background: linear-gradient(transparent 50%, #282828 50%);
+    -webkit-transform: scale(1.1) rotate(-72deg);
+    transform: scale(1.1) rotate(-72deg);
+}
+
+.mongo {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(0, 128, 0, 0.2)));
+    background: linear-gradient(0deg, green 50%, rgba(0, 128, 0, 0.2) 50%);
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+}
+
+.mongo:before,
+.mongo:after {
+    color: green;
+}
+
+.mongo:before {
+    content: "Mongo";
+    background: #282828 content-box;
+    -webkit-transform: rotate(-126deg);
+    transform: rotate(-126deg);
+    text-transform: uppercase;
+}
+
+.mongo:after {
+    content: "70%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #282828));
+    background: linear-gradient(transparent 50%, #282828 50%);
+    -webkit-transform: scale(1.1) rotate(-126deg);
+    transform: scale(1.1) rotate(-126deg);
+}
+
+.node {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ad0d98), color-stop(50%, rgba(173, 13, 152, 0.2)));
+    background: linear-gradient(0deg, #ad0d98 50%, rgba(173, 13, 152, 0.2) 50%);
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+}
+
+.node:before,
+.node:after {
+    color: #ad0d98;
+}
+
+.node:before {
+    content: "Node";
+    background: #282828 content-box;
+    -webkit-transform: rotate(-126deg);
+    transform: rotate(-126deg);
+    text-transform: uppercase;
+}
+
+.node:after {
+    content: "70%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #282828));
+    background: linear-gradient(transparent 50%, #282828 50%);
+    -webkit-transform: scale(1.1) rotate(-126deg);
+    transform: scale(1.1) rotate(-126deg);
+}
+
+.express {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #0768a0), color-stop(50%, rgba(7, 104, 160, 0.2)));
+    background: linear-gradient(0deg, #0768a0 50%, rgba(7, 104, 160, 0.2) 50%);
+    -webkit-transform: rotate(108deg);
+    transform: rotate(108deg);
+}
+
+.express:before,
+.express:after {
+    color: #0768a0;
+}
+
+.express:before {
+    content: "Express";
+    background: #282828 content-box;
+    -webkit-transform: rotate(-108deg);
+    transform: rotate(-108deg);
+    text-transform: uppercase;
+}
+
+.express:after {
+    content: "60%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #282828));
+    background: linear-gradient(transparent 50%, #282828 50%);
+    -webkit-transform: scale(1.1) rotate(-108deg);
+    transform: scale(1.1) rotate(-108deg);
+}
+
+.angular {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+    background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
+    -webkit-transform: rotate(108deg);
+    transform: rotate(108deg);
+}
+
+.angular:before,
+.angular:after {
+    color: red;
+}
+
+.angular:before {
+    content: "Angular";
+    background: #282828 content-box;
+    -webkit-transform: rotate(-108deg);
+    transform: rotate(-108deg);
+    text-transform: uppercase;
+}
+
+.angular:after {
+    content: "60%";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #282828));
+    background: linear-gradient(transparent 50%, #282828 50%);
+    -webkit-transform: scale(1.1) rotate(-108deg);
+    transform: scale(1.1) rotate(-108deg);
+}
+
+
+/*# sourceMappingURL=estilos.css.map */
