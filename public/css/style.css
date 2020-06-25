@@ -200,7 +200,7 @@ p {
 /* Experiencia */
 
 .card {
-    /* Add shadows to create the "card" effect */
+    
     width: 25%;
     height: 330px;
     border-radius: 8px;
@@ -260,12 +260,26 @@ p {
 /* Querys */
 
 @media (min-width:1024px) {
+
+#informacion{
+    font-size: 60px;
+padding: 10px;
+}
+
+.iconos{
+    font-size: 30px;
+}
+
+header{
+    height: 80px;
+}
+
     .menu {
         position: static;
-        width: auto;
-        height: auto;
+        width: 300px;
+        height: 80px;
         transform: translateX(0%);
-        float: right;
+        margin: 0 15%;
         display: flex;
     }
     header label {
@@ -273,9 +287,11 @@ p {
     }
     .contenedor {
         width: 1100px;
+        
+       
     }
     #titleUno {
-        font-size: 60px;
+        font-size: 100px;
     }
     #finalPrimerPagDos {
         margin-top: 10%;
@@ -283,7 +299,9 @@ p {
         font-size: 200%;
         display: block;
     }
+
     /* Index */
+
     #info {
         margin-top: 15%;
         color: white;
@@ -291,13 +309,13 @@ p {
     #huno {
         padding: 1%;
         font-family: seed;
-        font-size: 210%;
+        font-size: 80px;
         margin-left: -50%
     }
     #hdos {
         padding: 1%;
         font-family: seed;
-        font-size: 200%;
+        font-size: 60px;
         margin-left: -50%
     }
     #foto {
@@ -321,8 +339,47 @@ p {
         font-family: seed;
         cursor: pointer;
     }
+    p{
+        font-size: 40px;
+    }
+    #up{
+        margin-top: 10%;
+        width: 50%;
+        height: 40%;
+    }
+.icons{
+    font-size: 70px;
 }
 
+/* Experiencia */
+
+.container{
+    margin-top: 50px;
+}
+
+/* Aptitudes */
+.porcentajes{
+    width: 50%;
+    height: 40%;
+
+}
+
+/* Xp */
+.card {
+    width: 600px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.cardDos {
+    margin-top: 50px;
+}
+
+#finalPrimerPagDos {
+    margin: 10px;
+
+}
+}
 
 /* Fuentes */
 
